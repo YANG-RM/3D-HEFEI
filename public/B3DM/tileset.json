@@ -1,0 +1,22 @@
+{
+  "asset": {
+    "version": "0.0",
+    "tilesetVersion": "1.0.0-obj23dtiles"
+  },
+  "geometricError": 500,
+  "root": {
+    "boundingVolume": {
+      "region": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "refine": "ADD",
+    "geometricError": 500,
+    "children": []
+  }
+}
