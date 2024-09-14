@@ -173,7 +173,7 @@ const routes = [
         name: "material_colorLayer",
         component: () => import("@/views/material/colorLayer.vue"),
         meta: {
-          title: "四色图",
+          title: "区划图",
           activePath: "/material/colorLayer",
         },
       },

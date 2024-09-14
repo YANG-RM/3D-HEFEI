@@ -17,15 +17,15 @@ const store = useStore();
 const { viewer } = store.state;
 let cesiumHeatMap = null;
 const getData = async () => {
-  const { res } = await getGeojson("/json/point.geojson");
+  const { res } = await getGeojson("/json/heatpoint.json");
   const { features } = res;
   console.log(res);
   let heatData = [];
   if (features?.length) {
     heatData = features.map((item) => {
       return {
-        x: item.properties.lng - 0.05,
-        y: item.properties.lat - 0.04,
+        x: item.properties.lng ,
+        y: item.properties.lat ,
         value: item.properties.num,
       };
     });

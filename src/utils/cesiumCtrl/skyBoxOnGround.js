@@ -5,7 +5,7 @@ const SkyBoxFS = `uniform samplerCube u_cubeMap;
     in vec3 v_texCoord;
     out vec4 fragColor;
     void main(){
-        vec4 color = textureCube(u_cubeMap, normalize(v_texCoord));
+        vec4 color = texture(u_cubeMap, normalize(v_texCoord));
         fragColor = vec4(czm_gammaCorrect(color).rgb, czm_morphTime);
     }
 `;
