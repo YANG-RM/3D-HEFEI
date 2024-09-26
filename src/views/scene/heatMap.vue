@@ -20,7 +20,7 @@ const getData = async () => {
   const { res } = await getGeojson("/json/heatpoint.json");
   const { features } = res;
   console.log(res);
-  let heatData = [];
+  let heatData = []; 
   if (features?.length) {
     heatData = features.map((item) => {
       return {
